@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cardapio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <style>
+            main{
+                background-color: #EDA80F;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                height: 100vh;
+                width: 100%;
+            }
+        
+    </style>
+</head>
+<body>
+    <section class="cardapio">
+        <header class="header">
+         <img class="logo" src="../img/logo.png" alt="cox">
+     
+             <nav class="nav">
+                 <input type="checkbox" id="checkbox" class="checkbox">
+                 <label for="checkbox" class="label-menu"> 
+                     <span class="hamburger"></span></label>
+                 <ul class="menu">
+                     <li><a href="/index.html">home</a></li>
+                     <li><a href="/html/sobre.html">sobre</a></li>
+                     <li><a href="#">cardápio</a></li>
+                     <div class="but-contact">
+                         <a href="/html/contact.html" class="but-contact"><button>contatos</button></a>
+                       </div>
+                 </ul>
+             </nav>
+         </header>
+         <div class="text1" id="text2">
+             <h1>Cardápio</h1>
+             <p>venha experimentar a melhor coxinha <br> da região!</p>
+             <div class="but-contact">
+               <a href="/html/contact.html"><button>contatos</button></a>
+             </div>
+           
+         </div>
+     </section>
+
+     <main>
+            <div class="texte-cardapio">
+                <h2>COXINHAS GIGANTES</h2>
+            <small>De diversos sabores!</small>
+            </div>
+            <div class="main-scroll-div">
+                <div>
+                    <button class="icon" onclick="scrollr()">&lt;</button>
+                </div>
+                <div class="cover">
+                    <div class="scroll-images">
+                        <div class="child"><img class="child-img" src="../img/p1.jpeg" alt=""></div>
+                        <div class="child"><img class="child-img" src="../img/p2.jpeg" alt=""></div>
+                        <div class="child"><img class="child-img" src="../img/p3.jpeg" alt=""></div>
+                        <div class="child"><img class="child-img" src="../img/p4.jpeg" alt=""></div>
+                        <div class="child"><img class="child-img" src="../img/p5.jpeg" alt=""></div>
+                    </div>
+                </div>
+                <div><button class="icon" onclick="scrolll()">&gt;</button></div>
+            </div>
+
+            <div class="text-contac">
+                <h2>FAÇA SEU PEDIDO </h2> <h2>AGORA MESMO!</h2>
+            <p>Todas as opções a cima estão em um lavor de R$5.00</p>
+            <div class="but-sec">
+                <a href="/html/contact.html" ><button>contatos</button></a>
+            </div>
+     </main>
+     <footer>
+        <div class="sm">
+            <a href="#"><img src="../img/github.png" alt=""></a>
+            <a href="#"><img src="../img/insta.png" alt=""></a>
+            <a href="#"><img src="../img/whats.png" alt=""></a>
+        </div>
+        <div class="dev">
+            <li>Privacy Policy</li>
+            <li>Terms Of Use</li>
+            <li> Our Company</li>
+        </div>
+        <div class="eu">
+            <small>
+            Nay Kethillyn All Right Reserved.
+            </small>
+        </div>
+    </footer>
+</body>
+<script>
+    function scrolll(){
+        var left = document.querySelector(".scroll-images");
+        left.scrollBy(320, 0)
+    }
+
+    function scrollr(){
+        var right = document.querySelector(".scroll-images");
+        right.scrollBy(-350, 0)
+    }
+</script>
+</html>
